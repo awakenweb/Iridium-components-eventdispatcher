@@ -1,0 +1,27 @@
+{
+    "name": "awakenweb/iridium-components-eventdispatcher",
+    "description": "Iridium Components Event Dispatcher module",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "type": "library",
+    "authors":
+            [
+                {
+                    "name": "Mathieu Savelli",
+                    "email": "mathieu.savelli@awakenweb.fr",
+                    "homepage": "http://awakenweb.fr"
+                }
+            ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+        "atoum/atoum": "dev-master"
+    },
+    "autoload":
+            {
+                "psr-0": {"Iridium\\Components\\EventDispatcher\\": ""}
+            },
+    "target-dir": "Iridium/Components/EventDispatcher"
+}
+
