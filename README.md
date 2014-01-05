@@ -3,7 +3,7 @@ Iridium-components-eventdispatcher
 
 About
 -----
-Event dispatcher implementing the mediator pattern. Can be work independantly but best used with Iridium Framework
+Event dispatcher implementing the mediator pattern. Can work independantly but best used with Iridium Framework
 
 The Dispatcher class keeps a list of registred handlers for specific events. Handler can be any valid callback : closures, object/method array, etc. as long as they accept the Event object as parameter.
 The Event class allows you to propagate objects related to the events throug all registered handlers linked to this event.
