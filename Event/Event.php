@@ -64,7 +64,7 @@ class Event implements EventInterface
     public function __construct( $name , array $attachments = array() )
     {
         $this->setName( $name );
-        foreach ($attachments as $key => $attach) {
+        foreach ( $attachments as $key => $attach ) {
             $this->attach( $attach , $key );
         }
     }
@@ -75,7 +75,7 @@ class Event implements EventInterface
      *
      * @return \Iridium\Components\EventDispatcher\Event\Event
      */
-    public function setName($name)
+    public function setName( $name )
     {
         if ( ! is_string( $name ) || ! preg_match( '#^[a-z0-9.-]+$#i' , $name ) ) {
             throw new \InvalidArgumentException( 'Event name must be a non empty string and must only contain letters, digits, hyphens and dots' );
@@ -95,7 +95,7 @@ class Event implements EventInterface
      *
      * @return \Iridium\Components\EventDispatcher\Event\Event
      */
-    public function attach($element , $key = null)
+    public function attach( $element , $key = null )
     {
         if ( is_null( $key ) ) {
             $this->attachments[] = $element;
@@ -138,7 +138,7 @@ class Event implements EventInterface
      * @param  \Iridium\Components\EventDispatcher\Event\EventDispatcher\Dispatcher\Dispatcher $dispatcher
      * @return \Iridium\Components\EventDispatcher\Event\Event
      */
-    public function setDispatcher(\Iridium\Components\EventDispatcher\Dispatcher\DispatcherInterface $dispatcher)
+    public function setDispatcher( EventDispatcher\Dispatcher\DispatcherInterface $dispatcher )
     {
         $this->dispatcher = $dispatcher;
 
