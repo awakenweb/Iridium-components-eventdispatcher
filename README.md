@@ -1,6 +1,8 @@
 Iridium-components-eventdispatcher
 ==================================
 
+[![Build Status](https://travis-ci.org/awakenweb/Iridium-components-eventdispatcher.png?branch=master)](https://travis-ci.org/awakenweb/Iridium-components-eventdispatcher)
+
 About
 -----
 Event dispatcher implementing the mediator pattern. Can work independantly but best used with Iridium Framework
